@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: rgb(245, 237, 237);
+    background: linear-gradient(90deg, rgba(250, 242, 242, 0.486) 1%, rgb(243, 238, 233) 100%);
+}
+
+
+:root {
+    --Desaturated-Red: hsl(0, 36%, 70%);
+    --Soft-Red: hsl(0, 93%, 68%);
+
+    --Dark-Grayish-Red: hsl(0, 6%, 24%);
+
+    --josefin-font: 'Josefin Sans', sans-serif;
+}
+
+.container .section :not(.img-principal) {
+    flex-direction: column;
+    margin: 0 auto;
+    padding: 15px;
+    max-width: 600px;
+}
+
+
+.img-principal {
+
+
+    width: 100%;
+    padding-bottom: 2rem;
+
+}
+
+.title span {
+    font-weight: 100;
+    color: var(--Soft-Red);
+
+}
+
+.title {
+
+    text-align: center;
+    font-family: var(--josefin-font);
+    font-size: 40px;
+    line-height: 1.2;
+    letter-spacing: 0.2em;
+}
+
+.parrafo {
+    font-size: 1.1em;
+    text-align: center;
+    line-height: 1.5;
+    color: var(--Soft-Red);
+    font-weight: 400;
+}
+
+.buttom {
+    display: flex;
+    justify-content: center;
+}
+
+input {
+    width: 80%;
+    border-radius: 30px;
+    border: none;
+    color: var(--Soft-Red);
+    border: 2px solid #f1c7c7;
+    box-shadow: 2px 2px 5px #f3b6b683;
+    background-color: #ffb9b921;
+    outline: none;
+}
+
+input::placeholder {
+    color: var(--Desaturated-Red);
+    font-weight: 700;
+
+}
+
+@media (min-width: 800px) {
+    .container{
+        display: flex;
+    }
+
+    .img-principal {
+        order: 1;
+        position: relative;
+        background-image: url(/images/hero-desktop.jpg);
+      
+        width: 60%;
+        background-repeat: no-repeat;
+        
+    }
+}
